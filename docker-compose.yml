@@ -19,6 +19,8 @@ services:
     container_name: react_frontend
     ports:
       - "5173:5173"
+    environment:
+      __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS: churn.sandesh-portfolio.com
     depends_on:
       - backend
     volumes:
